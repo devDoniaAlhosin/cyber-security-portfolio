@@ -1,0 +1,38 @@
+
+<div class=" hero-section ">
+  <div class=" container container-fluid d-flex align-items-center justify-content-between">
+    <div class="hero-content">
+      <h1 class="display-4">
+        Hi, I'm a
+        <span class=" animated-name">Omar Tarek</span>
+      </h1>
+
+      <h4>Cybersecurity Expert </h4>
+      <p class="lead">
+        Protecting businesses and individuals from digital threats. I specialize in threat analysis, penetration testing, and data security.
+      </p>
+      <div class="button-container d-flex gap-2">
+        <button class="btn btn-primary contact-btn" (click)="onContactClick()">
+         <fa-icon [icon]="faEnvelope" class="me-2"></fa-icon>
+          Contact Me
+        </button>
+
+        <button class="btn  download-btn" (click)="onDownloadCV()">
+          <fa-icon [icon]="faFileDownload" class=" me-2"></fa-icon>
+          Download CV
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Right Image -->
+    <div class="hero-image">
+      <img
+        src="../../../assets/hero-section.png"
+        alt="Cybersecurity Expert"
+        class="img-fluid  rounded"
+      />
+    </div>
+  </div>
+
+</div>

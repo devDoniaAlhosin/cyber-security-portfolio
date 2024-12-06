@@ -1,0 +1,21 @@
+
+footer ul li a{
+  color: var(--Secondary-Color);
+}
+
+
+footer ul li a:hover {
+  color: var(--Primary-Color);
+  transition: .3s ease-in-out all;
+}
+footer .btn{
+  color: var(--Secondary-Color);
+  border: 1px solid var(--Secondary-Color);
+}
+footer .btn:hover {
+  background-color: var(--Primary-Color);
+  color: #fff;
+  transition: .3s ease-in-out all;
+  border: 1px solid var(--Primary-Color);
+
+}

@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+  --Primary-Color: #2CD97B;
+  --Secondary-Color: #091D42;
+  --Text-Color: #6B778E;
+  --Highlight-Text-Color: #EAFBF2;
+  --Default-Background: #FFFFFF;
+
+}
+h1, h2, h3 , h4 , h5 , h6 {
+  font-family: 'Montserrat', sans-serif;
+  color: var(--Secondary-Color);
+}
+body{
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+}
