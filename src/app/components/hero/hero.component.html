@@ -4,22 +4,21 @@
     <div class="hero-content">
       <h1 class="display-4">
         Hi, I'm a
-        <span class=" animated-name">Omar Tarek</span>
+        <span class=" animated-name">Omar Zayed</span>
       </h1>
 
-      <h4>Cybersecurity Expert </h4>
+      <h4>Cybersecurity Specialist | SOC Expert </h4>
       <p class="lead">
-        Protecting businesses and individuals from digital threats. I specialize in threat analysis, penetration testing, and data security.
-      </p>
+      I specialize in SOC Investigations, DFIR, Threat Hunting, and Malware Analysis. Passionate about enhancing detection, response, and operational efficiency. Let’s build secure and resilient systems!</p>
       <div class="button-container d-flex gap-2">
-        <button class="btn btn-primary contact-btn" (click)="onContactClick()">
+        <a href="#contact" class="btn btn-primary contact-btn" >
          <fa-icon [icon]="faEnvelope" class="me-2"></fa-icon>
           Contact Me
-        </button>
+        </a>
 
-        <button class="btn  download-btn" (click)="onDownloadCV()">
-          <fa-icon [icon]="faFileDownload" class=" me-2"></fa-icon>
+        <button class="btn gap-2 download-btn" (click)="onDownloadCV()">
           Download CV
+          <fa-icon [icon]="faArrowUpRightDots" class=" me-2"></fa-icon>
         </button>
       </div>
 
@@ -27,10 +26,11 @@
 
     <!-- Right Image -->
     <div class="hero-image">
+      <div class="animated-shape"></div>
       <img
         src="../../../assets/hero-section.png"
         alt="Cybersecurity Expert"
-        class="img-fluid  rounded"
+        class="img-fluid  rounded "
       />
     </div>
   </div>

@@ -1,1 +1,22 @@
-<p>about works!</p>
+<div class="aboutme--container ">
+  <div class=" container   ">
+  <div class="text-center title--section mb-5 container-fluid">
+    <h2 class="display-6 fw-bold">know me more</h2>
+    <div class="subtitle--container text-start">
+      <h4 class="text-muted">Experience & Skills</h4>
+      <p class="lead text-secondary mt-3">
+        Explore my professional journey and the companies where I gained valuable experience.
+      </p>
+    </div>
+
+  </div>
+
+  <div *ngIf="timeline.length" class="container-fluid">
+    <app-horizontal-timeline
+      [timelineElements]="timeline"
+      [showContent]="true"
+      [timelineWrapperWidth]="1000">
+    </app-horizontal-timeline>
+  </div>
+  </div>
+</div>

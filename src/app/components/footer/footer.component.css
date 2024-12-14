@@ -12,10 +12,19 @@ footer .btn{
   color: var(--Secondary-Color);
   border: 1px solid var(--Secondary-Color);
 }
+footer .container .social-media{
+  width: 40px;
+  height: 40px;
+}
 footer .btn:hover {
   background-color: var(--Primary-Color);
   color: #fff;
   transition: .3s ease-in-out all;
   border: 1px solid var(--Primary-Color);
 
+}
+hr{
+  width: 80%;
+  margin: 2rem auto;
+  border-top: 1px solid #e4e4e4;
 }

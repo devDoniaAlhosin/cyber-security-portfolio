@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
-import {  faEnvelope , faFileDownload  } from '@fortawesome/free-solid-svg-icons';
+import {  faEnvelope , faFileDownload  , faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-hero',
@@ -11,13 +11,11 @@ import {  faEnvelope , faFileDownload  } from '@fortawesome/free-solid-svg-icons
 })
 export class HeroComponent {
   faFileDownload=faFileDownload;
+  faArrowUpRightDots=faArrowUpRightDots;
   faEnvelope=faEnvelope;
 
 
-  onContactClick(): void {
-    alert('Navigating to the contact page...');
-    // Add routing logic here if necessary
-  }
+
 
   onDownloadCV(): void {
     const cvUrl = 'assets/CV_Omar_Tarek.pdf';
