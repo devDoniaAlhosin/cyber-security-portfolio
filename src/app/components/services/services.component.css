@@ -1,0 +1,64 @@
+section.services {
+  width: 100%;
+  padding: 40px 20px;
+  background: linear-gradient(to right, #d1e8ff, #e9f4ff);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.services-box h2 {
+  font-size: 2rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.services-box p {
+  font-size: 1.1rem;
+  color: #555;
+  max-width: 800px;
+  margin-bottom: 30px;
+}
+
+.types {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.d2c_services_card {
+  width: 200px;
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.d2c_services_card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.d2c_services_card img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.d2c_services_card h4 {
+  font-size: 1.2rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+.d2c_services_card p {
+  font-size: 0.9rem;
+  color: #666;
+  line-height: 1.5;
+}
