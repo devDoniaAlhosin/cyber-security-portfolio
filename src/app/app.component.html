@@ -2,4 +2,11 @@
 <div class="content" >
   <router-outlet></router-outlet>
 </div>
+<div class="scroll-to-top-container" *ngIf="showScroll">
+  <div class="circle" [style.transform]="getRotation()">
+    <button class="scroll-to-top" (click)="scrollToTop()">↑</button>
+  </div>
+</div>
+
+
 <app-footer></app-footer>

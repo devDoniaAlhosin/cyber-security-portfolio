@@ -1,1 +1,37 @@
-<p>projects works!</p>
+
+<section class="achievements--section py-5">
+<div class="achievements-container container ">
+  <div class="text-container ms-5">
+    <h1 class="title">
+      Licenses & certifications</h1>
+    <p class="subtitle">
+      A journey of learning, growth, and accomplishments across various
+      organizations.
+    </p>
+  </div>
+  <div class="slider-container " #swiperContainer>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" *ngFor="let achievement of achievements">
+        <div class="card ">
+          <img
+            [src]="achievement.image"
+            class="card-img-top"
+            alt="{{ achievement.title }}"
+          />
+          <div class="card-body">
+            <h5 class="card-title">{{ achievement.title }}</h5>
+
+          <ul class="description-links-list">
+            <li *ngFor="let desc of achievement.description.split(','); let i = index">
+              <a [href]="achievement.links.split(',')[i]?.trim()" target="_blank">{{ desc.trim() }}</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</section>
+
