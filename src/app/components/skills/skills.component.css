@@ -1,0 +1,79 @@
+/* General Section Style */
+.achievements-skills-section {
+  background-color: var(--Default-Background);
+  color: var(--Text-Color);
+}
+
+h2 {
+  color: var(--Secondary-Color);
+}
+
+/* Achievements */
+.achievements {
+  margin-bottom: 50px;
+}
+
+.achievement-card {
+  background: var(--Highlight-Text-Color);
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.achievement-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-icon {
+  font-size: 3rem;
+  color: var(--Primary-Color);
+  margin-bottom: 15px;
+}
+
+.achievement-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--Secondary-Color);
+}
+
+.achievement-description {
+  font-size: 0.9rem;
+  color: var(--Text-Color);
+}
+
+/* Skills */
+.skills-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.skill {
+  margin-bottom: 20px;
+}
+
+.skill-name {
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--Secondary-Color);
+  margin-bottom: 5px;
+}
+
+.progress {
+  background: #f3f3f3;
+  border-radius: 5px;
+  overflow: hidden;
+  height: 20px;
+}
+
+.progress-bar {
+  background: var(--Primary-Color);
+  color: #fff;
+  text-align: center;
+  font-size: 0.8rem;
+  line-height: 20px;
+  height: 100%;
+  transition: width 0.4s ease;
+}
