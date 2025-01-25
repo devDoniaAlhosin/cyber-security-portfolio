@@ -1,0 +1,79 @@
+.companies-section {
+  min-height: 80vh;
+  background-color:rgba(9, 29, 66, .96);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  color: #2CD97B;
+}
+h1::selection{
+  color: white;
+  background-color:  #2CD97B;
+}
+.paragragh{
+  margin-top: 10px;
+  padding: 20px;
+}
+p{
+  color: white;
+
+}
+p::selection{
+  color:white;
+  background:#2CD97B;
+}
+.container-fluid {
+  text-align: center;
+}
+
+.slider-wrap {
+  position: relative;
+}
+
+.slider-main {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.companies-item {
+  display: flex;
+  transition: all 1s ease-in-out;
+}
+
+.logos {
+  padding: 15px;
+  flex: 0 0 16.666%; /* Each logo takes 1/6th of the width */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+img {
+  border: solid 1px white;
+  height: 100px;
+  object-fit: contain;
+  background-color: transparent;
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease;
+}
+.company-name {
+  font-size: 14px;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 5px;
+}

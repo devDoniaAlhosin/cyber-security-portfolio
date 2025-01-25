@@ -7,12 +7,22 @@
 h2 {
   color: var(--Secondary-Color);
 }
+h2::selection{
+  color:white;
+  background:#2CD97B;
+}
 
 /* Achievements */
 .achievements {
   margin-bottom: 50px;
 }
-
+p{
+  color: #6B778E;
+}
+p::selection{
+  color:white;
+  background:#2CD97B;
+}
 .achievement-card {
   background: var(--Highlight-Text-Color);
   border-radius: 10px;
@@ -25,6 +35,8 @@ h2 {
 .achievement-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  /* background-color: #091D42; */
+color: wheat;
 }
 
 .achievement-icon {

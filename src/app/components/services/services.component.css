@@ -13,6 +13,10 @@ section.services {
   color: #003366;
   margin-bottom: 10px;
 }
+h2::selection{
+  color:white;
+  background:#2CD97B;
+}
 
 .services-box p {
   font-size: 1.1rem;
@@ -20,7 +24,10 @@ section.services {
   max-width: 800px;
   margin-bottom: 30px;
 }
-
+p::selection{
+  color:white;
+  background:#2CD97B;
+}
 .types {
   display: flex;
   flex-wrap: wrap;
@@ -32,9 +39,10 @@ section.services {
   width: 200px;
   background: #ffffff;
   border: 1px solid #e0e0e0;
+
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  padding: 10px;
   text-align: center;
   transition: transform 0.3s, box-shadow 0.3s;
 }

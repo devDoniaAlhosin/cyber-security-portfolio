@@ -1,1 +1,24 @@
-<p>companies works!</p>
+<section class="companies-section">
+  <div class="container-fluid">
+    <div class="slider-wrap">
+      <div class="companies-intro">
+        <h1>Companies I had worked with</h1>
+<div class="paragragh">
+  <p>
+    I'm a Cyber Security Specialist with experience in a variety of related fields, including network security, vulnerability management, and intrusion detection.
+  </p>
+</div>
+      </div>
+      <div class="slider-main">
+        <div class="companies-item">
+          <div class="logos" *ngFor="let company of visibleCompanies">
+            <img [src]="company.logo" [alt]="company.name"
+            [ngStyle]="company.customStyle || {}" />
+            <p class="company-name">{{ company.name }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
