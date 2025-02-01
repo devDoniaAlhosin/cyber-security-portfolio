@@ -42,3 +42,9 @@
 .scroll-to-top:hover {
   background-color: var(--Primary-Color);
 }
+
+@media (max-width: 768px) {
+  .content{
+    padding-top: 7rem;
+  }
+}

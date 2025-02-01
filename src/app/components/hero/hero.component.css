@@ -106,10 +106,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative; /* For relative positioning during animation */
+  position: relative;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 2px solid transparent;
-  overflow: hidden; /* Ensure any animation effect stays within the button */
+  overflow: hidden;
 }
 
 .contact-btn {
@@ -195,8 +195,17 @@
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .hero-content {
+    h4{
+      font-size: 15px;
+    }
+  }
   .hero-section {
     padding: 1rem 0 ;
+    .animated-shape {
+      width: 330px;
+      height: 330px;
+    }
   }
   .hero-section  .container{
     flex-direction: column-reverse;

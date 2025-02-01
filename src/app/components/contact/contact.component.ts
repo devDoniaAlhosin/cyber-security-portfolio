@@ -19,6 +19,7 @@ export class ContactComponent {
 
   onSubmit(form: NgForm) {
     if (form.invalid) {
+
       alert('Please fill in all required fields correctly.');
       return;
     }
@@ -34,7 +35,7 @@ export class ContactComponent {
     emailjs.send('service_68pbsmq', 'template_nxeu08v', emailData, '5YtD15bhmpi5FMpWo')
       .then((response) => {
         alert('Your message has been sent successfully!');
-        this.formData = { name: '', email: '', message: '', phone: '' };  // Reset form after submission
+        form.resetForm();
       })
       .catch((error) => {
         alert('There was an error sending your message. Please try again later.');

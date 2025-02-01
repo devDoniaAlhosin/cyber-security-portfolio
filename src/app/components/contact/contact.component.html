@@ -22,7 +22,7 @@
               [(ngModel)]="formData.name"
               #name="ngModel"
             />
-            <div *ngIf="name.invalid && name.touched" class="error-message">
+            <div *ngIf="(name.invalid && (name.touched || contactForm.submitted))" class="error-message">
               Full Name is required.
             </div>
           </div>
@@ -36,10 +36,10 @@
               required
               [(ngModel)]="formData.phone"
               #phone="ngModel"
-              pattern="^\d{10}$"
+              pattern="^\d*$"
             />
-            <div *ngIf="phone.invalid && phone.touched" class="error-message">
-              Please enter a valid 10-digit phone number.
+            <div *ngIf="(phone.invalid && (phone.touched || contactForm.submitted))" class="error-message">
+              Please enter a valid phone number (digits only).
             </div>
           </div>
         </div>
@@ -55,7 +55,7 @@
           #email="ngModel"
           pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
         />
-        <div *ngIf="email.invalid && email.touched" class="error-message">
+        <div *ngIf="(email.invalid && (email.touched || contactForm.submitted))" class="error-message">
           Please enter a valid email address.
         </div>
 

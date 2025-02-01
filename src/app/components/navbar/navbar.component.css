@@ -7,8 +7,6 @@
 }
 
 .navbar-brand {
-  /* width: 189px;
-  height: 96px; */
   width: 130px;
   height: 75px;
   transition: 0.3s color;
@@ -112,9 +110,15 @@
 
 /* Mobile devices */
 @media (max-width: 767px) {
+  .navbar{
+    width: 90%;
+  }
   .navbar-brand{
     width: 130px;
-    height: 75px;
+  }
+  .navbar-brand img {
+    max-width: 100px;
+    width: auto;
   }
   .offcanvas-body .contact--button{
     margin-top: 1.5rem  !important;
