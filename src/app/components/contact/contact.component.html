@@ -12,15 +12,63 @@
       <form (ngSubmit)="onSubmit(contactForm)" #contactForm="ngForm">
         <div class="row">
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Full Name" name="name" required [(ngModel)]="formData.name">
+            <label for="name">Full Name <span class="required">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Full Name"
+              name="name"
+              required
+              [(ngModel)]="formData.name"
+              #name="ngModel"
+            />
+            <div *ngIf="name.invalid && name.touched" class="error-message">
+              Full Name is required.
+            </div>
           </div>
           <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Phone Number" name="phone" required [(ngModel)]="formData.phone">
+            <label for="phone">Phone Number <span class="required">*</span></label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Phone Number"
+              name="phone"
+              required
+              [(ngModel)]="formData.phone"
+              #phone="ngModel"
+              pattern="^\d{10}$"
+            />
+            <div *ngIf="phone.invalid && phone.touched" class="error-message">
+              Please enter a valid 10-digit phone number.
+            </div>
           </div>
         </div>
-        <input type="email" class="form-control" placeholder="Enter Email Address" name="email" required [(ngModel)]="formData.email">
-        <textarea class="form-control" rows="5" placeholder="Write Your Message" name="message" required [(ngModel)]="formData.message"></textarea>
-        <button type="submit" class="btn btn-submit">Send Message</button>
+
+        <label for="email">Email Address <span class="required">*</span></label>
+        <input
+          type="email"
+          class="form-control"
+          placeholder="Enter Email Address"
+          name="email"
+          required
+          [(ngModel)]="formData.email"
+          #email="ngModel"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        />
+        <div *ngIf="email.invalid && email.touched" class="error-message">
+          Please enter a valid email address.
+        </div>
+
+        <label for="message">Message</label>
+        <textarea
+          class="form-control"
+          rows="5"
+          placeholder="Write Your Message"
+          name="message"
+          [(ngModel)]="formData.message"
+        ></textarea>
+
+        <button type="submit" class="btn btn-submit" [disabled]="contactForm.invalid">Send Message</button>
       </form>
     </div>
   </div>

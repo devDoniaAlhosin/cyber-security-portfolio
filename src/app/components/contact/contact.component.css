@@ -55,7 +55,9 @@
   border: none !important;
   border: 0px ;
 }
-
+label{
+  margin: 10px 0;
+}
 .btn-submit {
   background-color: var(--Secondary-Color);
   color: #fff;
@@ -72,7 +74,24 @@
   background-color: var(--Primary-Color);
 }
 
+.required {
+  color: red;
+  font-weight: bold;
+}
 
+.error-message {
+  color: red;
+  font-size: 12px;
+}
+
+.form-control.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.btn-submit:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
 @media (max-width:765px){
   .contact-container {
     padding: 1rem 2rem;

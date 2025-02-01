@@ -1,5 +1,5 @@
 import { animate } from '@angular/animations';
-import { NgFor } from '@angular/common';
+import { NgFor, NgIf } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import    { Navigation, Pagination, Autoplay, EffectCards } from 'swiper/modules';
 import Swiper from 'swiper';
@@ -8,7 +8,7 @@ import { FadeUpDirective } from '../../directives/fade-up.directive';
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor ,FadeUpDirective],
+  imports: [NgFor ,FadeUpDirective , NgIf],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })

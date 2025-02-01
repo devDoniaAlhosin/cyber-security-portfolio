@@ -1,0 +1,85 @@
+.achievements-skills-section {
+  background-color: var(--Default-Background);
+  color: var(--Text-Color);
+  padding: 6rem 0;
+}
+
+h2 {
+  color: var(--Secondary-Color);
+  font-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+h2::selection{
+  color:white;
+  background:#2CD97B;
+}
+
+.achievements {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+.achievements > p{
+  text-align: center;
+  width: 60%;
+    padding: 20px;
+    color: var(--Text--Color);
+}
+p::selection{
+  color:var(--Default-Background);
+  background:var(--Primary-Color);
+}
+.achievement-card {
+  background: var(--Highlight-Text-Color);
+  border-radius: 10px;
+  text-align: start;
+  padding: 60px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.achievement-card .custom-icon{
+  font-size: 50px;
+  color: var(--Secondary-Color);
+  font-weight: 400;
+}
+
+.achievement-card:hover  {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  background-color: var(--Secondary-Color);
+
+}
+.achievement-card:hover .custom-icon ,
+.achievement-card:hover .achievement-title{
+  color: var(--Highlight-Text-Color);
+}
+
+.achievement-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--Secondary-Color);
+}
+
+.achievement-description {
+  font-size: 0.9rem;
+  color: var(--Text-Color);
+}
+
+@media (max-width: 768px) {
+  .achievements-skills-section{
+  padding: 3rem 0;
+  }
+  .achievements > p{
+    width: 100% !important;
+
+  }
+
+}
+
+
+@media (max-width: 1024px){
+
+}
