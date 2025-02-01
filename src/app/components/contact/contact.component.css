@@ -74,14 +74,21 @@
 
 
 @media (max-width:765px){
+  .contact-container {
+    padding: 1rem 2rem;
+  }
   .form-container {
     flex-direction: column;
-    .left-panel{
-      width: 100%;
-      img{
-        width: 100%;
-      }
-
+    .contact-container{
+       flex-direction: column;
+          .left-panel{
+            width: 100%;
+              img{
+                width: 100%;
+        }
+     }
     }
   }
+
+
 }

@@ -1,4 +1,4 @@
-<div class="aboutme--container ">
+<div class="aboutme--container " appFadeUp>
   <div class=" container   ">
   <div class="text-center title--section mb-5 container-fluid">
     <h2 class="display-6 fw-bold">know me more</h2>
@@ -11,7 +11,7 @@
 
   </div>
 
-  <div *ngIf="timeline.length" class="container-fluid">
+  <div *ngIf="timeline.length" class="container-fluid w-80">
     <app-horizontal-timeline
       [timelineElements]="timeline"
       [showContent]="true"

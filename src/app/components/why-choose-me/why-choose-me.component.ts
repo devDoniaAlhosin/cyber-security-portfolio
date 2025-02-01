@@ -1,3 +1,4 @@
+import { FadeUpDirective } from './../../directives/fade-up.directive';
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { faUserShield , faChartLine, faGraduationCap, } from '@fortawesome/free-solid-svg-icons';
@@ -6,7 +7,7 @@ import { faUserShield , faChartLine, faGraduationCap, } from '@fortawesome/free-
 @Component({
   selector: 'app-why-choose-me',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FadeUpDirective , FontAwesomeModule],
   templateUrl: './why-choose-me.component.html',
   styleUrl: './why-choose-me.component.css'
 })

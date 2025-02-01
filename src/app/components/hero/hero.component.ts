@@ -1,3 +1,4 @@
+import { FadeUpDirective } from './../../directives/fade-up.directive';
 import { Component } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import {  faEnvelope , faFileDownload  , faArrowUpRightDots} from '@fortawesome/free-solid-svg-icons';
@@ -5,7 +6,7 @@ import {  faEnvelope , faFileDownload  , faArrowUpRightDots} from '@fortawesome/
 @Component({
   selector: 'app-hero',
   standalone: true,
-  imports: [FontAwesomeModule],
+  imports: [FadeUpDirective ,FontAwesomeModule],
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.css'
 })

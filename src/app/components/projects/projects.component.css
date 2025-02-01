@@ -83,3 +83,16 @@
     }
   }
 }
+@media (max-width:765px){
+    .achievements-container {
+    overflow: hidden;
+    flex-direction: column;
+    .text-container{
+      width: 100%;
+    }
+    .slider-container{
+      width: 85%;
+    }
+  }
+}
+

@@ -153,7 +153,6 @@ ol, ul {
   }
 
   .cd-horizontal-timeline::before {
-    /* never visible - this is used in jQuery to check the current MQ */
     content: 'desktop';
   }
 }
@@ -166,10 +165,12 @@ ol, ul {
 }
 
 .cd-timeline-navigation a {
-  /* these are the left/right arrows to navigate the timeline */
   position: absolute;
   z-index: 1;
   top: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   bottom: auto;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -180,7 +181,6 @@ ol, ul {
   width: 34px;
   border-radius: 50%;
   border: 2px solid #dfdfdf;
-  /* replace text with an icon */
   overflow: hidden;
   color: transparent;
   text-indent: 100%;
@@ -188,26 +188,32 @@ ol, ul {
   -webkit-transition: border-color 0.3s;
   -moz-transition: border-color 0.3s;
   transition: border-color 0.3s;
+  color: var( --Secondary-Color);
 }
 
-.cd-timeline-navigation a::after {
-  /* arrow icon */
-  content: '';
-  position: absolute;
+.cd-timeline-navigation  .prev .ng-fa-icon{
   height: 16px;
   width: 16px;
-  left: 50%;
-  top: 50%;
+  z-index: 100000;
   bottom: auto;
   right: auto;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -o-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-  background: url(../../../../assets//angle-small-right.svg) no-repeat 0 0;
-}
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+}
+.cd-timeline-navigation  .next .ng-fa-icon{
+  height: 16px;
+  width: 16px;
+  margin-left: -35px;
+  z-index: 100000;
+  bottom: auto;
+  right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
 .cd-timeline-navigation a.prev {
   left: 0;
   -webkit-transform: translateY(-50%) rotate(180deg);
@@ -217,20 +223,20 @@ ol, ul {
   transform: translateY(-50%) rotate(180deg);
 }
 
-.cd-timeline-navigation a.next {
-  right: 0;
-}
+
 
 .cd-timeline-navigation a:hover {
   border-color: var(--Primary-Color);
+  color: var(--Primary-Color);
 }
 
 .cd-timeline-navigation a.inactive {
+  color: var(--Text-Color);
   cursor: not-allowed;
 }
 
 .cd-timeline-navigation a.inactive::after {
-  background-position: 0 -16px;
+  /* background-position: 0 -16px; */
 }
 
 .cd-timeline-navigation a.inactive:hover {
@@ -258,7 +264,7 @@ ol, ul {
 }
 
 .cd-horizontal-timeline .events-content li > * {
-  width: 100%;
+  width: 80%;
   margin: 0 auto;
 }
 

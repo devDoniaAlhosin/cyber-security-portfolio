@@ -11,12 +11,14 @@ import {
   ViewChild,
   ViewChildren,
 } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { animate, keyframes, state, style, transition, trigger } from '@angular/animations';
+import {  faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-horizontal-timeline',
   standalone: true,
-  imports: [DatePipe , NgIf , NgClass, NgFor ],
+  imports: [DatePipe , NgIf , NgClass, NgFor ,FontAwesomeModule],
   changeDetection: ChangeDetectionStrategy.OnPush,
   templateUrl: './horizontal-timeline.component.html',
   styleUrl: './horizontal-timeline.component.css',
@@ -67,6 +69,7 @@ import { animate, keyframes, state, style, transition, trigger } from '@angular/
 export class HorizontalTimelineComponent implements AfterViewInit {
   prevLinkInactive: boolean = true;
   nextLinkInactive: boolean = false;
+  faChevronRight=faChevronRight;
   loaded: boolean = false;
   selectedIndex: number = 0;
   @ViewChild('eventsWrapper') eventsWrapper!: ElementRef;

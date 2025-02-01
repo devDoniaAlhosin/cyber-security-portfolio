@@ -3,15 +3,19 @@ import { NgFor } from '@angular/common';
 import { AfterViewInit, Component, ElementRef, ViewChild } from '@angular/core';
 import    { Navigation, Pagination, Autoplay, EffectCards } from 'swiper/modules';
 import Swiper from 'swiper';
+import { FadeUpDirective } from '../../directives/fade-up.directive';
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [NgFor],
+  imports: [NgFor ,FadeUpDirective],
   templateUrl: './projects.component.html',
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent {
+  constructor(){
+
+  }
   @ViewChild('swiperContainer', { static: false }) swiperContainer!: ElementRef;
   achievements = [
     {

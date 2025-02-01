@@ -16,6 +16,12 @@ footer .container .social-media{
   width: 40px;
   height: 40px;
 }
+.list-inline  {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
 footer .btn:hover {
   background-color: var(--Primary-Color);
   color: #fff;
@@ -27,4 +33,10 @@ hr{
   width: 80%;
   margin: 2rem auto;
   border-top: 1px solid #e4e4e4;
+}
+
+@media (max-width: 767px) {
+  .list-inline  {
+  gap: 20px;
+}
 }

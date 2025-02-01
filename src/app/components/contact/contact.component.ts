@@ -1,3 +1,4 @@
+import { FadeUpDirective } from './../../directives/fade-up.directive';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { FormBuilder, FormsModule, NgModelGroup } from '@angular/forms';
@@ -5,7 +6,7 @@ import { FormBuilder, FormsModule, NgModelGroup } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule , HttpClientModule],
+  imports: [FadeUpDirective ,FormsModule , HttpClientModule],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css'
 })

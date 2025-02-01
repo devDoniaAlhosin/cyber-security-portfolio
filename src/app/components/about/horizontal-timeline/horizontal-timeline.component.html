@@ -15,10 +15,15 @@
 
     <ul class="cd-timeline-navigation">
       <li>
-        <a href="#" (click)="onScrollClick($event, false)" class="prev" [ngClass]="{'inactive':prevLinkInactive}">Prev</a>
+        <a href="#" (click)="onScrollClick($event, false)" class="prev" [ngClass]="{'inactive':prevLinkInactive}">
+          <fa-icon class="icons-navigation" [icon]="faChevronRight"></fa-icon>
+
+        </a>
       </li>
       <li>
-        <a href="#" (click)="onScrollClick($event, true)" class="next" [ngClass]="{'inactive':nextLinkInactive}">Next</a>
+        <a href="#" (click)="onScrollClick($event, true)" class="next" [ngClass]="{'inactive':nextLinkInactive}">Next
+          <fa-icon class="icons-navigation" [icon]="faChevronRight "></fa-icon>
+        </a>
       </li>
     </ul>
   </div>

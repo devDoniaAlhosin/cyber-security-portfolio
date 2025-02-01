@@ -64,8 +64,13 @@
   color: var(--Secondary-Color);
   font-weight: 500;
   position: relative;
+  font-size: 15px;
+  font-weight: 500;
   &:hover {
+    transition: ease-in-out .7s all;
     color: var(--Primary-Color);
+    font-weight: 700;
+
   }
   &.active {
     color: var(--Primary-Color);

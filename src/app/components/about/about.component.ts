@@ -1,3 +1,4 @@
+import { FadeUpDirective } from './../../directives/fade-up.directive';
 import { NgClass, NgFor, NgIf } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
@@ -7,11 +8,13 @@ import { HorizontalTimelineComponent } from "./horizontal-timeline/horizontal-ti
 @Component({
   selector: 'app-about',
   standalone: true,
-  imports: [FontAwesomeModule, NgFor, NgIf, NgClass, HorizontalTimelineComponent],
+  imports: [FadeUpDirective ,FontAwesomeModule, NgFor, NgIf, NgClass, HorizontalTimelineComponent],
   templateUrl: './about.component.html',
   styleUrl: './about.component.css'
 })
 export class AboutComponent implements OnInit {
+
+
 
   name = 'Angular 6';
   content = `Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae
@@ -20,6 +23,7 @@ export class AboutComponent implements OnInit {
   timeline: TimelineElement[] = [];
 
   ngOnInit(): void {
+
     this.loadTimeline();
   }
 
