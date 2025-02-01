@@ -23,7 +23,7 @@
                 <li *ngFor="let desc of achievement.description.split(','); let i = index">
                   <!-- Check if achievement.links and split result are defined before trimming -->
                   <a *ngIf="achievement.links && achievement.links.split(',')[i]"
-                     [href]="achievement.links.split(',')[i]?.trim()"
+                     [href]="achievement.links.split(',')[i].trim()"
                      target="_blank">{{ desc.trim() }}</a>
                 </li>
               </ul>
