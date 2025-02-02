@@ -1,0 +1,44 @@
+.container--notfound{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 6rem 0;
+
+}
+.error-container {
+  text-align: center;
+  max-width: 600px;
+}
+.error-code {
+  font-size: 120px;
+  font-weight: bold;
+  color: var(--Primary-Color);
+}
+.error-text {
+  font-size: 22px;
+  color: var(--Text-Color);
+}
+.btn-home {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  background-color: var(--Primary-Color);
+  color: var(--Default-Background);
+  border: none;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: 0.3s ease-in-out;
+}
+
+.btn:hover {
+  background-color: var(--Secondary-Color);
+}
