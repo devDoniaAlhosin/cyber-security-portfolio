@@ -26,7 +26,7 @@ export class ProjectsComponent {
     },
     {
       title: 'Cisco',
-      description: 'CCNA , CyberOps Associate , CCNA: Enterprise Networking, Security, and Automation',
+      description: 'CCNA , CyberOps Associate , CCNA: Enterprise Networking Security and Automation',
       image: '../../../assets/bhis.png',
       links:'https://drive.google.com/file/d/1gXqckb2iIDx63S3HvPRe6TyVSB6ovVJ6/view , https://www.credly.com/badges/75639c4c-5469-4c87-8dc6-7e3e4ce25eaa/public_url ,https://www.credly.com/badges/6a5ce5eb-6da7-456c-adeb-c81fb9373221/public_url '
     },
