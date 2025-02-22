@@ -94,7 +94,8 @@ label{
 }
 @media (max-width:765px){
   .contact-container {
-    padding: 1rem 2rem;
+    width: 95%;
+    padding: 1rem 0px;
   }
   .form-container {
     flex-direction: column;
