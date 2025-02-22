@@ -8,7 +8,7 @@
 
 .navbar-brand {
   width: 130px;
-  height: 75px;
+  height: auto;
   transition: 0.3s color;
   img{
     width: 100%;
