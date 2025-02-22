@@ -115,10 +115,10 @@
   }
   .navbar-brand{
     width: 130px;
+    height: 60px;
   }
   .navbar-brand img {
     max-width: 100px;
-    width: auto;
   }
   .offcanvas-body .contact--button{
     margin-top: 1.5rem  !important;
